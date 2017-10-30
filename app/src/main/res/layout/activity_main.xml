@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.dictionarydemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="input the word"/>
+        <Button
+            android:id="@+id/lookup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lookup"
+            android:text="lookup"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/explanation_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Word defination"
+        android:textSize="20sp"/>
+
+</LinearLayout>
